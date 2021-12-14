@@ -1,0 +1,139 @@
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+}
+
+.fundo {
+    background-image: url("images/bg-intro-desktop.png");
+    display: flex;
+    background-color: hsl(0, 100%, 74%);
+    height: 100%;
+    width: 100%;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    height: 80%;
+    width: 80%;
+    align-items: center;
+}
+
+.info {
+    color:azure;
+    font-size: 16px;
+    height: 90%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1{
+    font-size: 50px;
+}
+
+p{
+    padding-top: 25px;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0 5px 0;
+    height: 90%;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.formin {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    width: 500px;
+    background-color: azure;
+    border-radius: 5px;
+}
+
+#btn1 {
+    background-color: hsl(248, 32%, 49%);
+    border: none;
+    color:azure;
+    border-radius: 5px;
+    width: 500px;
+    height: 60px;
+    margin-bottom: 15px;
+    font-family: 'Poppins', sans-serif;
+}
+
+#btn1:hover {
+    border: 3px solid hsl(248, 32%, 49%);
+    outline: none;
+    box-shadow: 0 0 10px hsl(248, 32%, 49%);
+    cursor: pointer;
+}
+
+#btn2 {
+    background-color: hsl(154, 59%, 51%);
+    border:none;
+    color:azure;
+    font-weight: bold;
+    border-radius: 5px;
+    height: 50px;
+    width: 90%;
+    font-family: 'Poppins', sans-serif;
+}
+
+#btn2:hover {
+    border: 3px solid hsl(154, 59%, 51%);
+    outline: none;
+    box-shadow: 0 0 10px hsl(154, 59%, 51%);
+    cursor: pointer;
+}
+
+.inp {
+    border:hsl(0, 11%, 87%) 1px solid;
+    border-radius: 5px;
+    width: 90%;
+    height: 50px;
+    margin: 5px;
+    padding: 8px;
+}
+
+.inp:focus {
+    border:2px solid hsl(248, 32%, 49%);
+    outline: none;
+    box-shadow: 0 0 8px hsl(248, 32%, 49%);
+}
+
+span {
+    color: hsl(0, 100%, 74%);
+    font-weight: bold;
+}
+
+span:hover {
+    cursor: pointer;
+}
+
+.formin p {
+    text-align: center;
+    font-size: 12px;
+    color:hsl(248, 32%, 49%);
+}
