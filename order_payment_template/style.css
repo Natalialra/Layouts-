@@ -1,34 +1,43 @@
 * {
-    margin:0; padding: 0;
+    margin:0; padding: 0; box-sizing: border-box;
 }
 
 body {
-    background: linear-gradient(45deg, #8e2de2, #4a08e0);
-    background-repeat: no-repeat;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     height: 100vh;
 }
 
 .container {
-    display: grid;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(45deg, #8e2de2, #4a08e0);
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
     border-radius: 10px;
     background-color: antiquewhite;
-    width: 450px;
-    height: 660px;
+    width: 24%;
+    height: 70%;
+    min-width: 351px;
+    min-height: 618px;
     text-align: center;
+    align-items: center;
 }
 
 .info {
-    margin: 0 20px 15px 20px;
+    margin: 15px 20px 15px 20px;
+    width: 90%;
+    height: 20%;
 }
 
-.buttons {
-    margin-top: 20px;
-}
 
 img {
+    width: 100%;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
@@ -58,8 +67,8 @@ i.fas.fa-music {
     text-align: center;
     border-radius: 5px;
     background-color: rgb(230, 222, 222);
-    width: 22rem;
-    height: 5rem;
+    width: 80%;
+    height: 13%;
 }
 
 .signature {
@@ -73,12 +82,18 @@ a {
     font-weight: bold;
 }
 
+.buttons {
+    margin-top: 20px;
+    width: 80%;
+    height: 30%;
+}
+
 #btn1 {
     background: linear-gradient(45deg, #8e2de2, #4a08e0);
     color: beige;
     border-radius: 5px;
-    width: 20rem;
-    height: 3rem;
+    width: 80%;
+    height: 30%;
     font-size: 15px;
     font-weight: bold;
 }
@@ -97,8 +112,8 @@ a {
     background-color: transparent;
     color:#77757c;
     border-radius: 5px;
-    width: 20rem;
-    height: 3rem;
+    width: 80%;
+    height: 30%;
     font-size: 15px;
     font-weight: bold;
     margin-top: 10px;
@@ -108,4 +123,33 @@ a {
     color: black;
     cursor: pointer;
     background: linear-gradient(45deg, #dbd9dd, #8d8997);
-};
+}
+
+/* Layout Responsivo */
+
+@media (max-width: 425px) {
+    .card {
+        width: 90%;
+        min-height: 474px;
+        min-width: 262px;
+    }
+}
+
+@media (max-height: 640px) {
+    .card {
+        width: 80%;
+        min-height: 618px;
+    }
+}
+
+@media (max-width: 768px) {
+    .card {
+        width: 70%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .card {
+        width: 35%;
+    }
+}
